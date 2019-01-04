@@ -1,0 +1,9 @@
+version: '2'
+services:
+  myjulab:
+    image: "mcchae/julab"
+    hostname: "jupyterlab"
+    volumes:
+      - ${PWD}:/notebook
+    ports:
+      - "8888:8888"
